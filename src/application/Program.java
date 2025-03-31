@@ -22,24 +22,21 @@ public class Program {
 		System.out.print("Quantity in stock:");
 		product.quantity = input.nextInt();
 		
-		System.out.println("\nProduct data:");
-		System.out.print(product.name + ", $" + product.price + ", units: " + product.quantity + ", Total: $" + product.totalValueInStock());
+		System.out.println("\nProduct data:" + product);
 		
 		System.out.println();
-		System.out.print("\nEnter the number of products to be added in stock: ");
+		System.out.print("Enter the number of products to be added in stock: ");
 		int addQuantity = input.nextInt();
 		product.addProduct(addQuantity);
 		
-		System.out.println("Product data:");
-		System.out.print(product.name + ", $" + product.price + ", units: " + product.quantity + ", Total: $" + product.totalValueInStock());
+		System.out.println("\nProduct data:" + product);
 		
 		System.out.println();
-		System.out.print("\nEnter the number of products to be removed from stock: ");
+		System.out.print("Enter the number of products to be removed from stock: ");
 		int removeQuantity = input.nextInt();
 		product.removeProduct(removeQuantity);
 		
-		System.out.println("\nProduct data:");
-		System.out.print(product.name + ", $" + product.price + ", units: " + product.quantity + ", Total: $" + product.totalValueInStock());
+		System.out.println("\nProduct data:" + product);
 		
 		input.close();
 	}
