@@ -26,15 +26,15 @@ public class Program {
 		
 		System.out.println();
 		System.out.print("Enter the number of products to be added in stock: ");
-		int addQuantity = input.nextInt();
-		product.addProduct(addQuantity);
+		int quantity = input.nextInt();
+		product.addProduct(quantity);
 		
 		System.out.println("\nProduct data:" + product);
 		
 		System.out.println();
 		System.out.print("Enter the number of products to be removed from stock: ");
-		int removeQuantity = input.nextInt();
-		product.removeProduct(removeQuantity);
+		quantity = input.nextInt();
+		product.removeProduct(quantity);
 		
 		System.out.println("\nProduct data:" + product);
 		
